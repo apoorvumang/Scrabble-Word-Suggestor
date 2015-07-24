@@ -11,19 +11,15 @@ Algorithm:
 
 Step 1: Generate the valid anagrams of all the words in the sowpods word list
 
-Step 2: Write a function that calculates the score of a given word (Score= Sum of the score of each letter of the word)
+Step 2: Accept a rack of letters from the user
 
-Step 3: Accept a rack of letters from the user
+Step 3: Generate all possible combinations of the rack recursively
 
-Step 4: Generate all possible combinations of the rack recursively
+Step 4: Compute the score of each combination
 
-Step 5: Access the anagrams of the combinations generated
+Step 5: For each combination, check if it exists in the anagram list. If it does, get the words that can be made using
+        that combination and store them in the WordScorer object.
 
-Step 6: Compute the score of the set of anagrams 
+Step 6: WordScorer sorts the words based on the score and returns a list
 
-Step 7: Put the word with the score in a data structure
-
-Step 8: Sort the data structure based on the value of the score of each word
-
-Step 9: Print the contents of the data structure
-
+Step 7: Print the list
